@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="theme-color" content="#12243A" />
+    <meta name="google-site-verification" content="pNA5KMQCvnh9jyf13Dv1F38fDEDcFpw84zkgUq_xDc0" />
+    <meta name="description" content="FRITZ CASH est votre espace financier sécurisé en Haïti pour gérer votre solde, faire une recharge NatCash ou MonCash, compléter votre KYC et demander une carte virtuelle ou Meru." />
+    <meta name="keywords" content="FRITZ CASH, portefeuille électronique Haïti, NatCash, MonCash, recharge, carte virtuelle, carte Meru, KYC" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" data-dynamic-canonical />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_HT" />
+    <meta property="og:site_name" content="FRITZ CASH" />
+    <meta property="og:title" content="FRITZ CASH — Votre espace financier sécurisé en Haïti" />
+    <meta property="og:description" content="Gérez votre solde, rechargez avec NatCash ou MonCash et demandez vos cartes avec une vérification KYC pensée pour votre sécurité." />
+    <meta property="og:url" content="/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FRITZ CASH — Votre espace financier sécurisé en Haïti" />
+    <meta name="twitter:description" content="Un espace clair pour recharger, transférer, payer et créer vos cartes." />
+    <title>FRITZ CASH — Portefeuille et cartes sécurisés en Haïti</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FinancialService","name":"FRITZ CASH","url":"/","description":"Plateforme financière numérique en Haïti pour portefeuille électronique, recharges NatCash et MonCash, vérification KYC et demandes de cartes virtuelles ou Meru.","areaServed":{"@type":"Country","name":"Haïti"},"serviceType":["Portefeuille électronique","Recharge NatCash","Recharge MonCash","Vérification KYC","Carte virtuelle","Carte Meru"],"contactPoint":{"@type":"ContactPoint","contactType":"customer support","email":"fritzbertsainthilaire@gmail.com","telephone":"+50955743483"}}</script>
+    <script>
+      (() => {
+        const origin = window.location.origin;
+        const canonical = document.querySelector('link[rel="canonical"]');
+        if (canonical) canonical.setAttribute("href", `${origin}/`);
+        const ogUrl = document.querySelector('meta[property="og:url"]');
+        if (ogUrl) ogUrl.setAttribute("content", `${origin}/`);
+        const structuredData = document.querySelector('script[type="application/ld+json"]');
+        if (structuredData) {
+          try {
+            const data = JSON.parse(structuredData.textContent || "{}");
+            data.url = `${origin}/`;
+            structuredData.textContent = JSON.stringify(data);
+          } catch { /* Keep valid static structured data if parsing is unavailable. */ }
+        }
+      })();
+    </script>
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script defer src="%VITE_ANALYTICS_ENDPOINT%/umami" data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+  </body>
+</html>

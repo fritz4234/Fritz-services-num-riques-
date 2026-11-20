@@ -1,0 +1,2 @@
+ALTER TABLE `exchangeRateSettings` ADD `minimumHtgMinor` int DEFAULT 0 NOT NULL;--> statement-breakpoint
+ALTER TABLE `users` ADD `avatarUrl` text;
